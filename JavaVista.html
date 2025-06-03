@@ -11,7 +11,7 @@
       crossorigin="anonymous"
     />
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Gabriela&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Slackey&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Gabriela&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Slackey&display=swap");
 
       :root {
         --text-slackey: "Slackey", sans-serif;
@@ -31,7 +31,7 @@
       }
 
       h2 {
-        font-family: var(--text-gabriela)
+        font-family: var(--text-gabriela);
       }
 
       h3 {
@@ -42,7 +42,7 @@
 
   <body>
     <!-- NAVBAR SISS -->
-    <nav id="NAVBAR" class="navbar fixed-top bg-light navbar-expand-lg">
+    <nav id="NAVBAR" class="navbar fixed-top navbar-expand-lg">
       <div class="container-fluid mx-3">
         <a class="navbar-brand fw-bold text-primary" href="#">
           <img
@@ -65,10 +65,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div
-          class="collapse navbar-collapse nav-pills flex-column"
-          id="navbarScroll"
-        >
+        <div class="collapse navbar-collapse flex-column" id="navbarScroll">
           <ul
             class="navbar-nav ms-auto my-lg-1 navbar-nav-scroll"
             style="--bs-scroll-height: 100px"
@@ -92,12 +89,14 @@
                 Discover
               </a>
               <ul class="dropdown-menu dropdown-menu-end">
-                <li><a class="dropdown-item" href="#">Culture Dive</a></li>
-                <li><a class="dropdown-item" href="#">Style & Threads</a></li>
-                <li><a class="dropdown-item" href="#">Flavors of Java</a></li>
-                <li><a class="dropdown-item" href="#">Speak Javanese!</a></li>
+                <li><a class="dropdown-item" href="#CULTURE">Culture Dive</a></li>
+                <li><a class="dropdown-item" href="#FLAVORS">Flavors of Java</a></li>
+                <li><a class="dropdown-item" href="#SPEAK">Speak Javanese!</a></li>
               </ul>
             </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link mx-lg-2" aria-current="page" href="#">Quiz</a>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link mx-lg-2" aria-current="page" href="#"
                 >Contact</a
@@ -109,27 +108,419 @@
     </nav>
 
     <!-- HEROO BROUU -->
-    <div class="container-fluid vh-100 text-center py-5" id="HOME">
-      <div class="p-5 mb-4 lc-block">
-        <div class="lc-block mb-4">
-          <div editable="rich">
-            <h1 class="fw-bold" style="font-size: 16vw;">Java</h1>
+    <div id="HOME" class="container-fluid vh-100 d-flex justify-content-center mb-5">
+      <div
+        class="d-flex justify-content-center align-items-center text-center"
+        style="
+          width: 95%;
+          height: 95vh;
+          background: top / cover no-repeat url(assets/gunung.jpg);
+          border-radius: 0 0 10vw 10vw;
+        "
+        id="HOME"
+      >
+        <div class="lc-block">
+          <div class="lc-block mb-4">
+            <div editable="rich">
+              <h1 class="fw-bold text-light" style="font-size: 16vw">Java</h1>
+            </div>
           </div>
-        </div>
-        <div class="lc-block mb-5">
-          <div editable="rich">
-            <h3 class="lead" style="font-size: 2rem; opacity: 50%;">
-              Ancient arts, sacred flavors, and vibrant traditions — all in one journey.
-            </h3>
+          <div class="lc-block mb-5">
+            <div editable="rich">
+              <p class="lead text-dark" style="font-size: 2rem">
+                Ancient arts, sacred flavors, and vibrant traditions — all in
+                one journey.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="lc-block mb-2">
-          <a class="btn btn-primary" href="#" role="button"
-            >Embrace the Fabulous</a
-          >
+          <div class="lc-block mb-2">
+            <a class="btn btn-dark" href="#" role="button"
+              >Embrace the Fabulous</a
+            >
+          </div>
         </div>
       </div>
     </div>
+
+    <!-- CULTURE DIVE -->
+    <div
+      id="CULTURE"
+      class="carousel slide w-100 my-5 b-5"
+      data-bs-touch="true"
+      style="width: 100vw"
+    >
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="width: 100vw; height: 100vh">
+          <div
+            class="d-flex flex-column flex-md-row align-items-center justify-content-center h-100 w-100 text-dark"
+          >
+            <div class="col-md-6 p-5 text-center text-md-start">
+              <h1 class="display-5 fw-bold">The Art of Tari</h1>
+              <p class="lead">
+                Graceful movements that echo centuries of tradition, telling
+                stories without a single word.
+              </p>
+              <a class="btn btn-outline-dark mt-3" href="#">See More</a>
+            </div>
+            <div class="col-md-5 p-3 text-center">
+              <img src="assets/tari.svg" class="img-fluid" alt="Tari" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="width: 100vw; height: 100vh">
+          <div
+            class="d-flex flex-column flex-md-row align-items-center justify-content-center h-100 w-100 text-dark"
+          >
+            <div class="col-md-6 p-5 order-md-2 text-center text-md-start">
+              <h1 class="display-5 fw-bold">Sounds of the Soul</h1>
+              <p class="lead">
+                From the gentle strike of gamelan to haunting vocals, Javanese
+                music is a heartbeat of heritage.
+              </p>
+              <a class="btn btn-dark mt-3" href="#">Listen Now</a>
+            </div>
+            <div class="col-md-5 p-3 order-md-1 text-center">
+              <img src="assets/musik.svg" class="img-fluid" alt="Musik" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item" style="width: 100vw; height: 100vh">
+          <div
+            class="d-flex flex-column flex-md-row align-items-center justify-content-center h-100 w-100 text-dark"
+          >
+            <div class="col-md-6 p-5 text-center text-md-start">
+              <h1 class="display-5 fw-bold">Threads of Identity</h1>
+              <p class="lead">
+                Each fabric, each pattern, a symbol of legacy — where elegance
+                meets deep-rooted cultural pride.
+              </p>
+              <a class="btn btn-outline-dark mt-3" href="#">Explore more</a>
+            </div>
+            <div class="col-md-5 p-3 text-center">
+              <img src="assets/busana.svg" class="img-fluid" alt="Tari" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="carousel-item" style="width: 100vw; height: 100vh">
+          <div
+            class="d-flex flex-column flex-md-row align-items-center justify-content-center h-100 w-100 text-dark"
+          >
+            <div class="col-md-6 p-5 order-md-2 text-center text-md-start">
+              <h1 class="display-5 fw-bold">Shadows of Legends</h1>
+              <p class="lead">
+                Wayang isn't just a puppet show — it's a cosmic play of good and
+                evil, light and shadow, rooted in Javanese philosophy.
+              </p>
+              <a class="btn btn-dark mt-3" href="#">Watch Now</a>
+            </div>
+            <div class="col-md-5 p-3 order-md-1 text-center">
+              <img src="assets/wayang.svg" class="img-fluid" alt="Musik" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#CULTURE"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#CULTURE"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Flavors of Java -->
+    <h1 id="FLAVORS" class="display-5 fw-bold text-center py-5">Speak Javanese!</h1>
+    <div class="row row-cols-1 row-cols-md-2 g-4 mx-5">
+      <div class="col">
+        <div class="card h-100 p-4">
+          <div class="card-body">
+            <h1 class="card-title">Gudeg</h1>
+            <p class="card-text">
+              Sweet young jackfruit stew cooked in coconut milk and spices. A
+              Yogyakarta classic with a unique blend of sweet and savory
+              flavors.
+            </p>
+          </div>
+          <img
+            src="assets/gudeg.png"
+            class="card-img-bottom"
+            alt="gudeg"
+            style="object-fit: contain; height: 40vh"
+          />
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-4">
+          <div class="card-body">
+            <h1 class="card-title">Sate Klathak</h1>
+            <p class="card-text">
+              Grilled mutton skewers seasoned simply with salt and grilled on
+              iron rods for a smoky, bold flavor. Specialty of Bantul,
+              Yogyakarta.
+            </p>
+          </div>
+          <img
+            src="assets/sate.png"
+            class="card-img-bottom"
+            alt="sate"
+            style="object-fit: contain; height: 40vh"
+          />
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-4">
+          <div class="card-body">
+            <h1 class="card-title">Soto Kudus</h1>
+            <p class="card-text">
+              A light and fragrant chicken soup served with bean sprouts, rice,
+              and garlic. Originating from Kudus, Central Java.
+            </p>
+          </div>
+          <img
+            src="assets/soto.png"
+            class="card-img-bottom"
+            alt="soto"
+            style="object-fit: contain; height: 40vh"
+          />
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-4">
+          <div class="card-body">
+            <h1 class="card-title">Getuk</h1>
+            <p class="card-text">
+              Mashed cassava snack with coconut and sugar, often dyed in vibrant
+              colors. A traditional sweet treat from Magelang.
+            </p>
+          </div>
+          <img
+            src="assets/getuk.png"
+            class="card-img-bottom"
+            alt="getuk"
+            style="object-fit: contain; height: 40vh"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!--  SPEAK JAVANESE -->
+    <div
+      id="SPEAK"
+      class="container accordion-container"
+      style="width: 80vw; margin: 5rem auto"
+    >
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <h1 class="display-5 fw-bold text-center py-5">Speak Javanese!</h1>
+
+        <div class="accordion-item">
+          <h1 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne"
+              aria-expanded="false"
+              aria-controls="flush-collapseOne"
+            >
+              Greetings (Salam)
+            </button>
+          </h1>
+          <div
+            id="flush-collapseOne"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              <ul>
+                <li><strong>Halo</strong> = Halo</li>
+                <li><strong>Selamat pagi</strong> = Sugeng enjang</li>
+                <li><strong>Selamat siang</strong> = Sugeng siang</li>
+                <li><strong>Selamat sore</strong> = Sugeng sonten</li>
+                <li><strong>Selamat malam</strong> = Sugeng dalu</li>
+                <li><strong>Bagaimana kabarmu?</strong> = Piye kabarmu?</li>
+                <li><strong>Baik-baik saja</strong> = Apik-apik wae</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h1 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo"
+              aria-expanded="false"
+              aria-controls="flush-collapseTwo"
+            >
+              Common Phrases (Ungkapan Umum)
+            </button>
+          </h1>
+          <div
+            id="flush-collapseTwo"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              <ul>
+                <li><strong>Terima kasih</strong> = Matur nuwun</li>
+                <li><strong>Sama-sama</strong> = Sami-sami</li>
+                <li><strong>Maaf</strong> = Nyuwun pangapunten</li>
+                <li><strong>Tolong</strong> = Tulung</li>
+                <li><strong>Saya tidak tahu</strong> = Aku ora ngerti</li>
+                <li><strong>Saya mengerti</strong> = Aku ngerti</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h1 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree"
+              aria-expanded="false"
+              aria-controls="flush-collapseThree"
+            >
+              Numbers (Angka)
+            </button>
+          </h1>
+          <div
+            id="flush-collapseThree"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              <ul>
+                <li><strong>1</strong> = Siji</li>
+                <li><strong>2</strong> = Loro</li>
+                <li><strong>3</strong> = Telu</li>
+                <li><strong>4</strong> = Papat</li>
+                <li><strong>5</strong> = Lima</li>
+                <li><strong>6</strong> = Enem</li>
+                <li><strong>7</strong> = Pitu</li>
+                <li><strong>8</strong> = Wolu</li>
+                <li><strong>9</strong> = Sanga</li>
+                <li><strong>10</strong> = Sepuluh</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT -->
+    <footer id="CONTACT" class="bg-light text-dark pt-5">
+      <div class="container mb-5">
+        <div
+          class="bg-dark text-white rounded-4 p-5 d-flex flex-column flex-md-row justify-content-between align-items-center"
+        >
+          <div class="mb-4 mb-md-0" style="max-width: 500px">
+            <h1 class="fw-bold">Subscribe to JavaNara</h1>
+            <p class="mb-0">
+              Get the latest cultural insights, travel tips, and authentic
+              stories from Java — all straight to your inbox.
+            </p>
+          </div>
+          <form
+            class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center gap-2 mt-4 mt-md-0"
+          >
+            <div>
+              <label for="newsletterEmail" class="form-label mb-1"
+                >Stay updated</label
+              >
+              <input
+                type="email"
+                class="form-control bg-success-subtle text-white border-0"
+                placeholder="Enter your email"
+                id="newsletterEmail"
+                required
+              />
+            </div>
+            <button type="submit" class="btn btn-success">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="container p-5">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <h5 class="fw-bold">JavaNara</h5>
+            <p>
+              Explore the spirit of Java — its arts, language, cuisine, and
+              timeless traditions — curated for the curious traveler.
+            </p>
+          </div>
+          <div class="col-6 col-md-2">
+            <h6 class="fw-bold">Discover</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#HOME" class="text-dark text-decoration-none">Home</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-2">
+            <h6 class="fw-bold">Experience</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#CULTURE" class="text-dark text-decoration-none"
+                  >Culture Dive</a
+                >
+              </li>
+              <li>
+                <a href="#FLAVORS" class="text-dark text-decoration-none"
+                  >Flavors of Java</a
+                >
+              </li>
+              <li>
+                <a href="#SPEAK" class="text-dark text-decoration-none"
+                  >Speak Javanese!</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-2">
+            <h6 class="fw-bold">Support</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-dark text-decoration-none">FAQs</a>
+              </li>
+              <li>
+                <a href="#CONTACT" class="text-dark text-decoration-none">Contact</a>
+              </li>
+              <li>
+                <a href="#" class="text-dark text-decoration-none"
+                  >Privacy & Terms</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
