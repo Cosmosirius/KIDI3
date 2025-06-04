@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaNara</title>
+    <link rel="icon" href="assets/favicon.png" type="image/png" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -42,11 +43,23 @@
 
   <body>
     <!-- NAVBAR SISS -->
-    <nav id="NAVBAR" class="navbar fixed-top navbar-expand-lg">
+    <nav
+      id="NAVBAR"
+      class="navbar fixed-top navbar-expand-lg"
+      style="
+        background: rgba(255, 255, 255, 0.35);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(9px);
+        -webkit-backdrop-filter: blur(9px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+      "
+    >
       <div class="container-fluid mx-3">
         <a class="navbar-brand fw-bold text-primary" href="#">
           <img
-            src="/docs/5.0/assets/brand/bootstrap-logo.svg"
+            src="assets/favicon.png"
+            style="object-fit: contain"
             alt=""
             width="30"
             height="24"
@@ -89,16 +102,22 @@
                 Discover
               </a>
               <ul class="dropdown-menu dropdown-menu-end">
-                <li><a class="dropdown-item" href="#CULTURE">Culture Dive</a></li>
-                <li><a class="dropdown-item" href="#FLAVORS">Flavors of Java</a></li>
-                <li><a class="dropdown-item" href="#SPEAK">Speak Javanese!</a></li>
+                <li>
+                  <a class="dropdown-item" href="#CULTURE">Culture Dive</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#FLAVORS">Flavors of Java</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#SPEAK">Speak Javanese!</a>
+                </li>
               </ul>
             </li>
             <!-- <li class="nav-item">
               <a class="nav-link mx-lg-2" aria-current="page" href="#">Quiz</a>
             </li> -->
             <li class="nav-item">
-              <a class="nav-link mx-lg-2" aria-current="page" href="#"
+              <a class="nav-link mx-lg-2" aria-current="page" href="#CONTACT"
                 >Contact</a
               >
             </li>
@@ -108,7 +127,10 @@
     </nav>
 
     <!-- HEROO BROUU -->
-    <div id="HOME" class="container-fluid vh-100 d-flex justify-content-center mb-5">
+    <div
+      id="HOME"
+      class="container-fluid vh-100 d-flex justify-content-center mb-5"
+    >
       <div
         class="d-flex justify-content-center align-items-center text-center"
         style="
@@ -134,7 +156,7 @@
             </div>
           </div>
           <div class="lc-block mb-2">
-            <a class="btn btn-dark" href="#" role="button"
+            <a class="btn btn-dark" href="#CULTURE" role="button"
               >Embrace the Fabulous</a
             >
           </div>
@@ -161,10 +183,63 @@
                 Graceful movements that echo centuries of tradition, telling
                 stories without a single word.
               </p>
-              <a class="btn btn-outline-dark mt-3" href="#">See More</a>
+              <a
+                class="btn btn-outline-dark mt-3"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop1"
+                href="#"
+                >See More</a
+              >
             </div>
             <div class="col-md-5 p-3 text-center">
               <img src="assets/tari.svg" class="img-fluid" alt="Tari" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal 1-->
+        <div
+          class="modal fade"
+          id="staticBackdrop1"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div
+            class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down"
+          >
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                  The Art of Tari
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="ratio ratio-16x9 mb-3">
+                  <iframe
+                    src="https://www.youtube.com/embed/xkR5Anc-nHE"
+                    title="Tari Tradisional Jawa"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <p class="fw-light text-justify">
+                  Tari tradisional Jawa adalah ekspresi estetika yang penuh
+                  filosofi. Setiap gerakan mengandung makna kehidupan,
+                  kebijaksanaan, dan penghormatan terhadap alam serta leluhur.
+                  Beberapa tari terkenal antara lain Tari Bedhaya, Tari Serimpi,
+                  dan Tari Gambyong, yang masing-masing mencerminkan kelembutan,
+                  keteguhan, dan keindahan budaya Jawa.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -180,10 +255,62 @@
                 From the gentle strike of gamelan to haunting vocals, Javanese
                 music is a heartbeat of heritage.
               </p>
-              <a class="btn btn-dark mt-3" href="#">Listen Now</a>
+              <a
+                class="btn btn-dark mt-3"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop2"
+                href="#"
+                >Listen Now</a
+              >
             </div>
             <div class="col-md-5 p-3 order-md-1 text-center">
               <img src="assets/musik.svg" class="img-fluid" alt="Musik" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal 2-->
+        <div
+          class="modal fade"
+          id="staticBackdrop2"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div
+            class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down"
+          >
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                  Sounds of the Soul
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="ratio ratio-16x9 mb-3">
+                  <iframe
+                    src="https://www.youtube.com/embed/Ep1C30KRYu8?si=nk9kVGZo7bS09Lma"
+                    title="Musik Tradisional Jawa"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <p class="fw-light text-justify">
+                  Gamelan adalah musik tradisional Jawa yang sarat nilai
+                  spiritual dan harmoni. Bunyi gong, kenong, saron, dan gender
+                  berpadu menciptakan alunan lembut yang menenangkan jiwa.
+                  Gamelan digunakan dalam upacara adat, pertunjukan wayang, dan
+                  tari, menjadi suara dari jiwa masyarakat Jawa.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -230,6 +357,7 @@
       <!-- Controls -->
       <button
         class="carousel-control-prev"
+        style="width: 5%; top: 50%; transform: translateY(-50%)"
         type="button"
         data-bs-target="#CULTURE"
         data-bs-slide="prev"
@@ -239,6 +367,7 @@
       </button>
       <button
         class="carousel-control-next"
+        style="width: 5%; top: 50%; transform: translateY(-50%)"
         type="button"
         data-bs-target="#CULTURE"
         data-bs-slide="next"
@@ -249,7 +378,9 @@
     </div>
 
     <!-- Flavors of Java -->
-    <h1 id="FLAVORS" class="display-5 fw-bold text-center py-5">Speak Javanese!</h1>
+    <h1 id="FLAVORS" class="display-5 fw-bold text-center py-5">
+      Flavors of Java
+    </h1>
     <div class="row row-cols-1 row-cols-md-2 g-4 mx-5">
       <div class="col">
         <div class="card h-100 p-4">
@@ -454,13 +585,13 @@
               >
               <input
                 type="email"
-                class="form-control bg-success-subtle text-white border-0"
+                class="form-control bg-primary-subtle text-white border-0"
                 placeholder="Enter your email"
                 id="newsletterEmail"
                 required
               />
             </div>
-            <button type="submit" class="btn btn-success">Subscribe</button>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
           </form>
         </div>
       </div>
@@ -509,7 +640,9 @@
                 <a href="#" class="text-dark text-decoration-none">FAQs</a>
               </li>
               <li>
-                <a href="#CONTACT" class="text-dark text-decoration-none">Contact</a>
+                <a href="#CONTACT" class="text-dark text-decoration-none"
+                  >Contact</a
+                >
               </li>
               <li>
                 <a href="#" class="text-dark text-decoration-none"
